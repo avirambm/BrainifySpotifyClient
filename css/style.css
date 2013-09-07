@@ -2,29 +2,41 @@
 @import url('PTS55F-webfont.css');
 @import url('PTS75F-webfont.css');
 
+/* General */
+
 html { overflow: auto; }
 
 body { font-family: "pt_sansregular", Arial, sans-serif; background-color: #252528; color:#fff; }
 
-#logo_holder { position:absolute; top:5px; right:5px; }
-
-#firstPlaylistContainer, #secondPlaylistContainer ,#thirdPlaylistContainer, #fourthPlaylistContainer{ height:150px;  overflow-y:auto; }
+h1,h2,h3,h4,p { color:white; }
 
 hr { background-color: #d4d4d4; height: 1px; border: 0; }
 
 p { padding-left: 5px; }
 
+
+/* Upper section */
+
+#logo_strength { position:absolute; top:5px; right:5px; }
+
+#nowPlaying { height:230px; }
+
 #playing img, #meVSWorld img { vertical-align:text-top; }
 
 #currentTitle strong, #currentArtist strong { font-family: "pt_sansbold", Arial, sans-serif; }
+
+#graph_container #graph_tabs { margin-top:10px; }
+#graph_container .nav.nav-tabs a { color:#fff; }
+#graph_container .nav.nav-tabs li.active a { color:#000; }
+#graph_container .nav.nav-tabs li a:hover { color:#000; }
+
+
+/* Playlists */
+
+#firstPlaylistContainer, #secondPlaylistContainer ,#thirdPlaylistContainer, #fourthPlaylistContainer{ height:150px;  overflow-y:auto; }
 
 #firstPlaylist, #thirdPlaylist, #happy, #relaxed, #playing, #meVSWorld { padding-left: 5px; }
 
 #thirdPlaylistContainer, #fourthPlaylistContainer { padding-left: -5px; }
 
 #row1 { padding-bottom: 15px; }
-
-h4,h3,p,h1 { color:white; }
-
-#nowPlaying { height:230px; }
-

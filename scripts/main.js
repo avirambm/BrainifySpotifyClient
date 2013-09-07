@@ -5,6 +5,5 @@ require([
   'use strict';
 
    playerModel.doGetCurrentTrackOnLoad();
-    playerModel.doGetCurrentTrackOnChangeEvent();
-
+   playerModel.doGetCurrentTrackOnChangeEvent();
 });
