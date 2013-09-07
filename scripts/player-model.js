@@ -18,7 +18,6 @@ require([
 
     var doGetCurrentTrackOnLoad = function () {
         getCurrentSong(0);
-        sendSongsToServer();
     }
 
     function getCurrentSong(type) {
