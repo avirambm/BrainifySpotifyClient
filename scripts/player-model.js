@@ -4,7 +4,9 @@ require([
     'use strict';
 
     var doGetCurrentTrackOnChangeEvent = function () {
-        getCurrentSong();
+        models.player.addEventListener('change', function() {
+            getCurrentSong();
+        });
     }
 
     var doGetCurrentTrackOnLoad = function () {
