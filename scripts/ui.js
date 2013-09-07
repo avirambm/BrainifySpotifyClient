@@ -1,8 +1,14 @@
-
 $(document).ready(function() {
+
+    setTimeout(function() {
+        $('#loading_playlists').css('display','none');
+        $("#playlists").fadeIn("slow");
+        $("#toggle_holder").fadeIn("slow");
+        onResize();
+    }, 1500);
+
     var currentPlaylist = null;
 
-    onResize();
     $(window).resize(function() {
         onResize();
     });

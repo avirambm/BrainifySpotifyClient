@@ -213,6 +213,8 @@ require([
             height: 30
         });
         $('.toggle-modern').on('toggle', function (e, active) {
+            $('#playlists').css('display','none');
+            $('#loading_playlists').fadeIn("slow");
             if (active) {
                 getPlaylistRecommendationsForUser(0, numOfSongsPerPlaylist);
 
@@ -228,6 +230,13 @@ require([
                 $("#relaxed").html("Relax The World ");
                 $("#excited").html("Wake The World Up");
             }
+
+            setTimeout(function() {
+                $('#loading_playlists').css('display','none');
+                $("#playlists").fadeIn("slow");
+                $("#toggle_holder").fadeIn("slow");
+                onResize();
+            }, 1500);
         });
 
         // Get data from emotiv
