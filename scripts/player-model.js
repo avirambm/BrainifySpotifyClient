@@ -56,12 +56,12 @@ require([
         $.post(apiBaseUrl + "spotify/" + user_id, { "current_track_id": currTrackID.toString(), "is_playing": isPlaying }, function(data) {
             var globalMeditation = data.global.meditation;
             var globalEngagement = data.global.engagement;
-            var globalFrustration = data.global.happiness;
+            var globalHappiness = data.global.happiness;
             var globalExcitement = data.global.excitement;
 
             var userMeditation = data.user.meditation;
             var userEngagement = data.user.engagement;
-            var userFrustration = data.user.happiness;
+            var userHappiness = data.user.happiness;
             var userExcitement = data.user.excitement;
 
 
@@ -69,14 +69,14 @@ require([
             $('#userEnergy').html(userExcitement.toFixed(1).toString());
             $('#worldEnergy').html(globalExcitement.toFixed(1).toString());
 
-            $('#userHappiness').html(userExcitement.toFixed(1).toString());
-            $('#worldHappiness').html(globalExcitement.toFixed(1).toString());
+            $('#userHappiness').html(userHappiness.toFixed(1).toString());
+            $('#worldHappiness').html(globalHappiness.toFixed(1).toString());
 
-            $('#userFocus').html(userExcitement.toFixed(1).toString());
-            $('#worldFocus').html(globalExcitement.toFixed(1).toString());
+            $('#userFocus').html(userEngagement.toFixed(1).toString());
+            $('#worldFocus').html(globalEngagement.toFixed(1).toString());
 
-            $('#userCalmness').html(userExcitement.toFixed(1).toString());
-            $('#worldCalmness').html(globalExcitement.toFixed(1).toString());
+            $('#userCalmness').html(userMeditation.toFixed(1).toString());
+            $('#worldCalmness').html(globalMeditation.toFixed(1).toString());
 
 
 
