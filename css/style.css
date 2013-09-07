@@ -40,3 +40,9 @@ p { padding-left: 5px; }
 #thirdPlaylistContainer, #fourthPlaylistContainer { padding-left: -5px; }
 
 #row1 { padding-bottom: 15px; }
+
+#firstAlbumCoverContainer, #secondAlbumCoverContainer, #thirdAlbumCoverContainer, #fourthAlbumCoverContainer { position: relative; width:150px; }
+#firstAlbumCoverContainer1, #secondAlbumCoverContainer1, #thirdAlbumCoverContainer1, #fourthAlbumCoverContainer1 { float:left; top:0; left:0; width:75px; height:75px; }
+#firstAlbumCoverContainer2, #secondAlbumCoverContainer2, #thirdAlbumCoverContainer2, #fourthAlbumCoverContainer2 { float:left; top:0; right:0; width:75px; height:75px; }
+#firstAlbumCoverContainer3, #secondAlbumCoverContainer3, #thirdAlbumCoverContainer3, #fourthAlbumCoverContainer3 { float:left; top:75px; left:0; width:75px; height:75px; }
+#firstAlbumCoverContainer4, #secondAlbumCoverContainer4, #thirdAlbumCoverContainer4, #fourthAlbumCoverContainer4 { float:left; top:75px; left:0; width:75px; height:75px; }
