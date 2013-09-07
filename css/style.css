@@ -9,3 +9,32 @@ body {
     background-color: #252528;
     color:#fff;
 }
+
+#firstPlaylistContainer, #secondPlaylistContainer ,#thirdPlaylistContainer, #fourthPlaylistContainer{
+    height:150px;
+    overflow-y:auto;
+}
+
+
+hr {
+    background-color: #d4d4d4;
+    height: 1px;
+    border: 0px;
+}
+
+p { padding-left: 5px; }
+
+#playing img, #meVSWorld img { vertical-align:text-top; }
+
+#currentTitle strong, #currentArtist strong { font-family: "pt_sansbold", Arial, sans-serif; }
+
+#firstPlaylist, #thirdPlaylist, #happy, #relaxed, #playing, #meVSWorld { padding-left: 5px; }
+
+#thirdPlaylistContainer, #fourthPlaylistContainer { padding-left: -5px; }
+
+#row1 { padding-bottom: 15px; }
+
+h4,h3,p,h1 { color:white; }
+
+#nowPlaying { height:230px; }
+
