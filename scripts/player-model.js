@@ -136,6 +136,8 @@ require([
         }, 'json');
     }
 
+    fun
+
     exports.doGetCurrentTrackOnChangeEvent = doGetCurrentTrackOnChangeEvent;
     exports.doGetCurrentTrackOnLoad = doGetCurrentTrackOnLoad;
 
