@@ -27,12 +27,14 @@ require([
             });
 
             var list = List.forPlaylist(playlist, { style: 'rounded', fields:['artist','track','time'], height:'fixed'});
+            $('#' + playlistContainer).empty();
             document.getElementById(playlistContainer).appendChild(list.node);
             list.init();
 
             for (var i = 0; i < 4; i++) {
                 var track = models.Track.fromURI(playlistTracks[i]);
                 var image = Image.forTrack(track, { width:75, height:75 });
+                $('#' + coverContainer + (i+1).toString()).empty();
                 document.getElementById(coverContainer + (i+1).toString()).appendChild(image.node);
             }
         });
