@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a626ade-9c1e-4598-8499-10fcbbbf71bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/de.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/es-419.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/es.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fr.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/it.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nl.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pl.loc/strings/main.lang" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/language-example.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zh-Hant.loc/strings/main.lang" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="brainify.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +67,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="23" selection-start="512" selection-end="512" vertical-scroll-proportion="0.34539473">
+            <state line="14" column="5" selection-start="494" selection-end="494" vertical-scroll-proportion="0.34539473">
               <folding />
             </state>
           </provider>
@@ -108,6 +95,7 @@
         <option value="$PROJECT_DIR$/scripts/main.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -305,9 +293,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="512" selection-end="512" vertical-scroll-proportion="0.34539473">
+        <state line="14" column="5" selection-start="494" selection-end="494" vertical-scroll-proportion="0.34539473">
           <folding />
         </state>
       </provider>
