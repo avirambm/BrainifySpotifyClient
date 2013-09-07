@@ -1,3 +1,11 @@
-html {
-  overflow: auto;
+@import url('bootstrap.css');
+@import url('PTS55F-webfont.css');
+@import url('PTS75F-webfont.css');
+
+html { overflow: auto; }
+
+body {
+    font-family: "pt_sansregular", Arial, sans-serif;
+    background-color: #252528;
+    color:#fff;
 }
