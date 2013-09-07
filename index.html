@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- Include the stylesheets you need for the Views components -->
+    <title>Brainify</title>
     <link rel="stylesheet" href="$views/css/image.css">
     <link rel="stylesheet" href="$views/css/list.css">
-    <link rel="stylesheet" href="$views/css/buttons.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/head.load.min.js"></script>
+    <script type="text/javascript">
+        var apiBaseUrl = 'http://tbd/';
+        head.js("scripts/jquery-2.0.3.min.js", "scripts/bootstrap.min.js", "scripts/main.js");
+    </script>
 </head>
 <body>
 <div id="nowPlaying">
@@ -39,7 +42,6 @@
     </div>
     <!--second playlist container-->
     <div class="span5"></div>
-
 
 </div>
 
