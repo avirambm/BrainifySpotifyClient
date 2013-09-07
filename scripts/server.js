@@ -200,22 +200,33 @@ require([
 
         var numOfSongsPerPlaylist = 30;
         getPlaylistRecommendationsForUser(0, numOfSongsPerPlaylist);
-        $(".togglebox").click(function() {
-            if ($('#chkbx').is(':checked')) {
-                getPlaylistRecommendationsGlobal(numOfSongsPerPlaylist);
-
-                $("#focused").html("Keep The World Focused");
-                $("#happy").html("Make The World Happy");
-                $("#relaxed").html("Relax The World ");
-                $("#excited").html("Wake The World Up");
-            }
-            else {
+        $('.toggle-modern').toggles({
+            click: true,
+            text: {
+                on: 'Me',
+                off: 'World'
+            },
+            on: true,
+            animate: 250,
+            transition: 'ease-in-out',
+            width: 80,
+            height: 30
+        });
+        $('.toggle-modern').on('toggle', function (e, active) {
+            if (active) {
                 getPlaylistRecommendationsForUser(0, numOfSongsPerPlaylist);
 
                 $("#focused").html("Keep Me Focused");
                 $("#happy").html("Make Me Happy");
                 $("#relaxed").html("Relax Me");
                 $("#excited").html("Wake Me Up");
+            } else {
+                getPlaylistRecommendationsGlobal(numOfSongsPerPlaylist);
+
+                $("#focused").html("Keep The World Focused");
+                $("#happy").html("Make The World Happy");
+                $("#relaxed").html("Relax The World ");
+                $("#excited").html("Wake The World Up");
             }
         });
 

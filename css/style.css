@@ -59,14 +59,93 @@ h3#meVSWorld { margin-bottom:2px; font-size:22px;}
 
 
 /* Toggle switch */
+#toggle_holder { float:right; right:5px; top:-10px; display:inline-block; position:relative; }
+.toggle-slide {
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    direction: ltr;
+}
+.toggle-slide .toggle-on,.toggle-slide .toggle-off,.toggle-slide .toggle-blob {
+    float: left;
+}
+.toggle-slide .toggle-blob {
+    position: relative;
+    z-index: 99;
+    cursor: hand;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
 
-/* Togglebox */
-.togglebox input{ display:none; }
-.togglebox{ float:right; top:-10px;right:5px; display:inline-block; border:1px solid #BBB; width:90px; height:30px; position:relative; border-radius:20px; color:#FFF; font-weight:bold; overflow:hidden; box-shadow:0 1px 0 #CCC; }
-.togglebox label{ width:200%; height:100%; line-height:30px; border-radius:0.4em; position:absolute; top:0; left:0; z-index:1; font-size:1.1em; cursor:pointer; -webkit-transition:0.12s; -moz-transition:0.12s; transition:0.12s; }
-.togglebox span{ position:absolute; right:-100px; }
-.togglebox label::before{ content:'Me'; width:62px; float:left; margin-right:-16px; padding-right:13px; text-align:center; background:#007FEA; text-shadow:0 -1px 0px #093B5C; box-shadow:0 4px 5px -2px rgba(0,0,0,0.3) inset; }
-.togglebox label b{ display:block; height:100%; width:30px; float:left; position:relative; z-index:1; border:1px solid #AAA; background:#F6F6F6; box-shadow:0 4px 0 -2px #F1F1F1 inset, 0 2em 2em -2em #AAA inset, 0 0 2px rgba(0,0,0,.5); border-radius:20px; }
-.togglebox label:hover b{ background:#E5E5E5; }
-.togglebox label::after{ content:'World'; width:62px; float:left; margin-left:-15px; padding-left:13px; text-align:center; color:#007FEA; background:#FFF; box-shadow:0 4px 5px -2px rgba(0,0,0,0.3) inset; }
-.togglebox input:checked ~ label{ left:-60px; }
+.toggle-modern .toggle-slide {
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c0c5c9), color-stop(1, #a1a9af));
+    background-image: -webkit-linear-gradient(#c0c5c9, #a1a9af);
+    background-image: -moz-linear-gradient(#c0c5c9, #a1a9af);
+    background-image: -o-linear-gradient(#c0c5c9, #a1a9af);
+    background-image: -ms-linear-gradient(#c0c5c9, #a1a9af);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0c5c9', endColorstr='#a1a9af');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0c5c9', endColorstr='#a1a9af')";
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.toggle-modern .toggle-slide .toggle-on, .toggle-modern .toggle-slide .toggle-off {
+    -moz-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 11px;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 -1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-modern .toggle-slide .toggle-off,.toggle-modern .toggle-slide .toggle-off.active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #737e8d), color-stop(1, #3f454e));
+    background-image: -webkit-linear-gradient(#737e8d, #3f454e);
+    background-image: -moz-linear-gradient(#737e8d, #3f454e);
+    background-image: -o-linear-gradient(#737e8d, #3f454e);
+    background-image: -ms-linear-gradient(#737e8d, #3f454e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#737e8d', endColorstr='#3f454e');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#737e8d', endColorstr='#3f454e')";
+}
+.toggle-modern .toggle-slide .toggle-on,.toggle-modern .toggle-slide .toggle-on.active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4894cd), color-stop(1, #2852a6));
+    background-image: -webkit-linear-gradient(#4894cd, #2852a6);
+    background-image: -moz-linear-gradient(#4894cd, #2852a6);
+    background-image: -o-linear-gradient(#4894cd, #2852a6);
+    background-image: -ms-linear-gradient(#4894cd, #2852a6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4894cd', endColorstr='#2852a6');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4894cd', endColorstr='#2852a6')";
+}
+.toggle-modern .toggle-select .toggle-off, .toggle-modern .toggle-select .toggle-on {
+    background: none;
+}
+.toggle-modern .toggle-slide .toggle-blob {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c0c5c9), color-stop(1, #81898f));
+    background-image: -webkit-linear-gradient(#c0c6c9, #81898f);
+    background-image: -moz-linear-gradient(#c0c6c9, #81898f);
+    background-image: -o-linear-gradient(#c0c6c9, #81898f);
+    background-image: -ms-linear-gradient(#c0c6c9, #81898f);
+    background-image: linear-gradient(#c0c6c9, #81898f);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0c6c9', endColorstr='#81898f');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0c5c9', endColorstr='#a1a9af')";
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+.toggle-modern .toggle-slide .toggle-blob:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a1a9af), color-stop(1, #a1a9af));
+    background-image: -webkit-linear-gradient(#a1a9af, #81898f);
+    background-image: -moz-linear-gradient(#a1a9af, #a1a9af);
+    background-image: -o-linear-gradient(#a1a9af, #a1a9af);
+    background-image: -ms-linear-gradient(#a1a9af, #a1a9af);
+    background-image: linear-gradient(#a1a9af, #a1a9af);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1a9af', endColorstr='#a1a9af');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1a9af', endColorstr='#a1a9af')";
+}
