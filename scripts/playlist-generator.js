@@ -26,7 +26,7 @@ require([
                 }
             });
 
-            var list = List.forPlaylist(playlist, { style: 'rounded' });
+            var list = List.forPlaylist(playlist, { style: 'rounded', fields:['artist','track','time'], height:'fixed'});
             document.getElementById(playlistContainer).appendChild(list.node);
             list.init();
 
