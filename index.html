@@ -10,91 +10,114 @@
     <script type="text/javascript" src="scripts/head.load.min.js"></script>
     <script type="text/javascript">
         var apiBaseUrl = 'http://tbd/';
-        head.js("scripts/jquery-2.0.3.min.js", "scripts/bootstrap.min.js", "scripts/main.js");
+        head.js("scripts/jquery-2.0.3.min.js", "scripts/bootstrap.min.js", "scripts/main.js", "scripts/smoothie.js", "scripts/graph.js", "scripts/ui.js ");
     </script>
 </head>
 <body>
 
-<div id="logo_holder">
-    <img src="images/logo_bad.png" width="122" height="35" alt="Brainify logo" id="logo_strength">
-</div>
+<!-- Logo -->
+<img src="images/logo_bad.png" width="122" height="35" alt="Brainify" id="logo_strength">
 
+<!-- Top section (now playing, graph, me vs. the world) -->
 <div id="nowPlaying">
     <div class="row">
         <div class="span4">
+            <!-- Now playing -->
             <h3 id="playing"><img src="images/play.png" width="22" height="22" alt="Now Playing"> Now Playing</h3>
             <p id="currentTitle"><strong>Track:</strong> <span id="nowplaying_title"></span></p>
             <p id="currentArtist"><strong>Artist:</strong> <span id="nowplaying_artist"></span></p>
 
+            <!-- Me vs. The World -->
             <h3 id="meVSWorld"><img src="images/world.png" width="22" height="22" alt="Me vs. The World (Earth designed by Francesco Paleari from The Noun Project)"> Me vs. The World</h3>
+        </div>
+
+        <!-- Graph -->
+        <div class="span10" id="graph_container">
+            <ul id="graph_tabs" class="nav nav-tabs">
+                <li class="active"><a href="#energy" data-toggle="tab">Energy</a></li>
+                <li><a href="#happiness" data-toggle="tab">Happiness</a></li>
+                <li><a href="#focus" data-toggle="tab">Focus</a></li>
+                <li><a href="#calmness" data-toggle="tab">Calmness</a></li>
+            </ul>
+            <div id="graph_tabs_content" class="tab-content">
+                <!-- Energy graph -->
+                <div class="tab-pane fade in active" id="energy"><canvas id="livegraph_energy" width="780" height="120"></canvas></div>
+
+                <!-- Happiness graph -->
+                <div class="tab-pane fade" id="happiness"><canvas id="livegraph_happiness" width="780" height="120"></canvas></div>
+
+                <!-- Focus graph -->
+                <div class="tab-pane fade" id="focus"><canvas id="livegraph_focus" width="780" height="120"></canvas></div>
+
+                <!-- Calmness graph -->
+                <div class="tab-pane fade" id="calmness"><canvas id="livegraph_calmness" width="780" height="120"></canvas></div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Line break-->
-<hr>
+<hr/>
 
-<!-- Headers for first and second playlists-->
+<!-- Headers for first and second playlists -->
 <div class="row">
     <h4 id="happy" class="span7">Make Me Happy</h4>
     <h4 id="focused" class="span7">Keep Me Focused</h4>
 </div>
 
-<!--First row of playlists - contains first and second playlists covers and songs-->
-<div id="row1"class="row">
+<!-- First row of playlists - contains first and second playlists covers and songs -->
+<div id="row1" class="row">
 
-    <!--first playlist covers-->
+    <!-- First playlist covers -->
     <div id="firstPlaylist" class="span2">
         <div id="firstAlbumCoverContainer1"></div>
         <div id="firstAlbumCoverContainer2"></div>
         <div id="firstAlbumCoverContainer3"></div>
         <div id="firstAlbumCoverContainer4"></div>
     </div>
-    <!--first playlist container-->
+    <!-- First playlist container -->
     <div id="firstAlbumPlaylistContainer" class="span5"></div>
 
-    <!--second playlist covers-->
+    <!-- Second playlist covers -->
     <div id="secondPlaylist" class="span2">
         <div id="secondAlbumCoverContainer1"></div>
         <div id="secondAlbumCoverContainer2"></div>
         <div id="secondAlbumCoverContainer3"></div>
         <div id="secondAlbumCoverContainer4"></div>
     </div>
-    <!--second playlist container-->
+    <!-- Second playlist container -->
     <div id="secondAlbumPlaylistContainer" class="span5"></div>
 
 </div>
 
-<!-- Headers for third and fourth playlists-->
+<!-- Headers for third and fourth playlists -->
 <div class="row">
     <h4 id="relaxed" class="span7">Relax Me</h4>
     <h4 id="excited" class="span7">Wake Me Up</h4>
 </div>
 
-<!--Second row of playlists - contains third and fourth playlists covers and songs-->
+<!-- Second row of playlists - contains third and fourth playlists covers and songs -->
 <div id="row2" class="row">
 
-    <!--third playlist covers-->
+    <!-- Third playlist covers -->
     <div id="thirdPlaylist" class="span2">
         <div id="thirdAlbumCoverContainer1"></div>
         <div id="thirdAlbumCoverContainer2"></div>
         <div id="thirdAlbumCoverContainer3"></div>
         <div id="thirdAlbumCoverContainer4"></div>
-
     </div>
-    <!--third playlist container-->
+    <!-- Third playlist container -->
     <div id="thirdAlbumPlaylistContainer" class="span5"></div>
 
-    <!--fourth playlist covers-->
+    <!-- Fourth playlist covers -->
     <div id="fourthPlaylist" class="span2">
         <div id="fourthAlbumCoverContainer1"></div>
         <div id="fourthAlbumCoverContainer2"></div>
         <div id="fourthAlbumCoverContainer3"></div>
         <div id="fourthAlbumCoverContainer4"></div>
     </div>
-    <!--fourth playlist container-->
+    <!-- Fourth playlist container -->
     <div id="fourthAlbumPlaylistContainer" class="span5"></div>
-
 
 </div>
 
