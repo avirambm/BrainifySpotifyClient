@@ -11,7 +11,7 @@
     "300x300": "images/icons/icon-300x300.png"
   },
   "AppName": {
-    "en": "My Boilerplate App"
+    "en": "Brainify"
   },
   "BundleIdentifier": "brainify",
   "BundleType": "Application",
