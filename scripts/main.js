@@ -1,14 +1,6 @@
 require([
   '$api/models',
-  'scripts/cover-example',
-  'scripts/button-example',
-  'scripts/playlist-example'
-], function(models, coverExample, buttonExample, playlistExample) {
+], function(models) {
   'use strict';
-
-  coverExample.doCoverForAlbum();
-  buttonExample.doShareButtonForArtist();
-  buttonExample.doPlayButtonForAlbum();
-  playlistExample.doPlaylistForAlbum();
 
 });
