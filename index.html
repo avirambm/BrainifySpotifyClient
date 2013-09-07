@@ -30,69 +30,36 @@
             <!-- Me vs. The World -->
             <h3 id="meVSWorld"><img src="images/world.png" width="22" height="22" alt="Me vs. The World (Earth designed by Francesco Paleari from The Noun Project)"> Me vs. The World</h3>
 
-            <!--Energy -->
-            <div class="row small">
+            <!-- Energy / Happiness -->
+            <div>
 
-                <div class="span2">
-                    <p id="EnergyVS">Energy:</p>
+                <div class="span2 mvw">
+                    <p class="lowbottom">Energy:</p>
+                    <p><span class="vsBox" id="userEnergy">x</span> <span class="vsText">vs</span> <span class="vsBox" id="worldEnergy">y</span></p>
                 </div>
 
-                <div class="span1">
-                    <p id="userEnergy"></p>
+                <div class="span2 mvw">
+                    <p class="lowbottom">Happiness:</p>
+                    <p><span class="vsBox" id="userHappiness">x</span> <span class="vsText">vs</span> <span class="vsBox" id="worldHappiness">y</span></p>
                 </div>
 
-                <div class="span1">
-                    <p id="worldEnergy"></p>
-                </div>
             </div>
 
-            <!-- Happiness -->
-            <div class="row small">
+            <!-- Focus / Calmness -->
+            <div>
 
-                <div class="span2">
-                    <p id="HappinessVS">Happiness:</p>
+                <div class="span2 mvw">
+                    <p class="lowbottom">Focus:</p>
+                    <p><span class="vsBox" id="userFocus">x</span> <span class="vsText">vs</span> <span class="vsBox" id="worldFocus">y</span></p>
                 </div>
 
-                <div class="span1">
-                    <p id="userHappiness"></p>
+                <div class="span2 mvw">
+                    <p class="lowbottom">Calmness:</p>
+                    <p><span class="vsBox" id="userCalmness">x</span> <span class="vsText">vs</span> <span class="vsBox" id="worldCalmness">y</span></p>
                 </div>
 
-                <div class="span1">
-                    <p id="worldHappiness"></p>
-                </div>
             </div>
 
-            <!-- Focus -->
-            <div class="row small">
-
-                <div class="span2">
-                    <p id="FocusVS">Focus:</p>
-                </div>
-
-                <div class="span1">
-                    <p id="userFocus"></p>
-                </div>
-
-                <div class="span1">
-                    <p id="worldFocus"></p>
-                </div>
-            </div>
-
-            <!-- Calmness -->
-            <div class="row small">
-
-                <div class="span2">
-                    <p id="CalmnessVS">Calmness:</p>
-                </div>
-
-                <div class="span1">
-                    <p id="userCalmness"></p>
-                </div>
-
-                <div class="span1">
-                    <p id="worldCalmness"></p>
-                </div>
-            </div>
         </div>
 
         <!-- Graph -->
@@ -105,16 +72,16 @@
             </ul>
             <div id="graph_tabs_content" class="tab-content">
                 <!-- Energy graph -->
-                <div class="tab-pane fade in active" id="energy"><canvas id="livegraph_energy" width="780" height="120"></canvas></div>
+                <div class="tab-pane fade in active" id="energy"><canvas id="livegraph_energy" width="780" height="165"></canvas></div>
 
                 <!-- Happiness graph -->
-                <div class="tab-pane fade" id="happiness"><canvas id="livegraph_happiness" width="780" height="120"></canvas></div>
+                <div class="tab-pane fade" id="happiness"><canvas id="livegraph_happiness" width="780" height="165"></canvas></div>
 
                 <!-- Focus graph -->
-                <div class="tab-pane fade" id="focus"><canvas id="livegraph_focus" width="780" height="120"></canvas></div>
+                <div class="tab-pane fade" id="focus"><canvas id="livegraph_focus" width="780" height="165"></canvas></div>
 
                 <!-- Calmness graph -->
-                <div class="tab-pane fade" id="calmness"><canvas id="livegraph_calmness" width="780" height="120"></canvas></div>
+                <div class="tab-pane fade" id="calmness"><canvas id="livegraph_calmness" width="780" height="165"></canvas></div>
             </div>
         </div>
     </div>
