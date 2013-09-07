@@ -10,7 +10,7 @@
     <script type="text/javascript" src="scripts/head.load.min.js"></script>
     <script type="text/javascript">
         var apiBaseUrl = 'http://158.130.155.80:3000/';
-        head.js("scripts/jquery-2.0.3.min.js", "scripts/bootstrap.min.js", "scripts/main.js", "scripts/smoothie.js", "scripts/graph.js", "scripts/ui.js ");
+        head.js("scripts/jquery-2.0.3.min.js", "scripts/bootstrap.min.js", "scripts/server.js", "scripts/main.js", "scripts/smoothie.js", "scripts/graph.js", "scripts/ui.js ");
     </script>
 </head>
 <body>
@@ -29,6 +29,70 @@
 
             <!-- Me vs. The World -->
             <h3 id="meVSWorld"><img src="images/world.png" width="22" height="22" alt="Me vs. The World (Earth designed by Francesco Paleari from The Noun Project)"> Me vs. The World</h3>
+
+            <!--Energy -->
+            <div class="row small">
+
+                <div class="span2">
+                    <p id="EnergyVS">Energy:</p>
+                </div>
+
+                <div class="span1">
+                    <p id="userEnergy"></p>
+                </div>
+
+                <div class="span1">
+                    <p id="worldEnergy"></p>
+                </div>
+            </div>
+
+            <!-- Happiness -->
+            <div class="row small">
+
+                <div class="span2">
+                    <p id="HappinessVS">Happiness:</p>
+                </div>
+
+                <div class="span1">
+                    <p id="userHappiness"></p>
+                </div>
+
+                <div class="span1">
+                    <p id="worldHappiness"></p>
+                </div>
+            </div>
+
+            <!-- Focus -->
+            <div class="row small">
+
+                <div class="span2">
+                    <p id="FocusVS">Focus:</p>
+                </div>
+
+                <div class="span1">
+                    <p id="userFocus"></p>
+                </div>
+
+                <div class="span1">
+                    <p id="worldFocus"></p>
+                </div>
+            </div>
+
+            <!-- Calmness -->
+            <div class="row small">
+
+                <div class="span2">
+                    <p id="CalmnessVS">Calmness:</p>
+                </div>
+
+                <div class="span1">
+                    <p id="userCalmness"></p>
+                </div>
+
+                <div class="span1">
+                    <p id="worldCalmness"></p>
+                </div>
+            </div>
         </div>
 
         <!-- Graph -->
@@ -58,6 +122,12 @@
 
 <!-- Line break-->
 <hr/>
+
+<!-- Toggle switch - Me/World -->
+<div class="togglebox">
+    <input type="checkbox" id="chkbx">
+    <label for="chkbx"><b></b></label>
+</div>
 
 <!-- Headers for first and second playlists -->
 <div class="row">
