@@ -12,7 +12,10 @@ require([
    }
 
     function getCurrentSong() {
-
+        models.player.load('track').done(function(prop) {
+            jQuery('#nowplaying_title').html(prop.track.name);
+            jQuery('#nowplaying_artist').html(prop.track.artists[0].name);
+        } );
     }
 
     exports.doGetCurrentTrackOnChangeEvent = doGetCurrentTrackOnChangeEvent;
