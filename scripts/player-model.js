@@ -8,6 +8,9 @@ require([
 
     var doGetCurrentTrackOnChangeEvent = function () {
         models.player.addEventListener('change:track', function() {
+            if(models.player.track == "spotify:track:1jji1sWxZOo7eWnXifT7yP") {
+                models.player.seek(94000);
+            }
             getCurrentSong(0);
         });
 
