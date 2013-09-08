@@ -42,8 +42,6 @@ $(document).ready(function() {
         var thisID = $(this).attr("id");
         if($(this).css('opacity') < 1) {
             $(this).fadeTo(1000,1);
-            //$(secondAlbumCoverContainer).fadeTo(1000,1);
-            console.log('TES');
         }
 
         $('.span5').each(function() {
